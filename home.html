@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TOC Master - Learn Theory of Computation</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- Start Screen -->
+    <div class="start-screen" id="startScreen">
+      <div class="start-container">
+        <h1>TOC Master</h1>
+        <div class="team-input">
+          <input type="text" id="teamName" placeholder="Enter your team name" maxlength="20">
+          <button id="startGame">Start Game</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container" id="gameContainer" style="display: none;">
+      <div class="game-header">
+        <div class="team-info">Team: <span id="teamDisplay"></span></div>
+        <div class="timer">Time: <span id="timer">00:00</span></div>
+        <div class="score-display">
+          <div class="score-bar">
+            <div class="score-progress"></div>
+          </div>
+          <div class="score-text">Score: <span class="score">0</span>/100</div>
+        </div>
+        <div class="chances">Chances Left: <span class="chances-left">6</span></div>
+      </div>
+
+      <div class="game-area">
+        <div class="hint-box">
+          <span class="hint-label">Hint:</span>
+          <span class="hint-text"></span>
+        </div>
+
+        <div class="word-display"></div>
+
+        <div class="keyboard">
+          <div class="keyboard-row">
+            <button class="key" data-key="A">A</button>
+            <button class="key" data-key="B">B</button>
+            <button class="key" data-key="C">C</button>
+            <button class="key" data-key="D">D</button>
+            <button class="key" data-key="E">E</button>
+            <button class="key" data-key="F">F</button>
+            <button class="key" data-key="G">G</button>
+            <button class="key" data-key="H">H</button>
+            <button class="key" data-key="I">I</button>
+            <button class="key" data-key="J">J</button>
+          </div>
+          <div class="keyboard-row">
+            <button class="key" data-key="K">K</button>
+            <button class="key" data-key="L">L</button>
+            <button class="key" data-key="M">M</button>
+            <button class="key" data-key="N">N</button>
+            <button class="key" data-key="O">O</button>
+            <button class="key" data-key="P">P</button>
+            <button class="key" data-key="Q">Q</button>
+            <button class="key" data-key="R">R</button>
+            <button class="key" data-key="S">S</button>
+            <button class="key" data-key="T">T</button>
+          </div>
+          <div class="keyboard-row">
+            <button class="key" data-key="U">U</button>
+            <button class="key" data-key="V">V</button>
+            <button class="key" data-key="W">W</button>
+            <button class="key" data-key="X">X</button>
+            <button class="key" data-key="Y">Y</button>
+            <button class="key" data-key="Z">Z</button>
+          </div>
+        </div>
+
+        <div class="game-controls">
+          <button class="reset-btn" id="resetGame">Reset Game</button>
+          <button class="new-game-btn" id="newGame">New Game</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- High Scores Modal -->
+    <div class="modal" id="highScoresModal">
+      <div class="modal-content">
+        <h2>High Scores</h2>
+        <div class="high-scores-list" id="highScoresList"></div>
+        <button class="close-modal">Close</button>
+      </div>
+    </div>
+
+    <script src="js/word.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
